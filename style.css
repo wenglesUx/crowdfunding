@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+.section,.section2,.section3{
+    display:block;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+body{
+    width:100vw;
+    overflow-x:hidden;
+    background-color: rgb(230, 224, 224);
+}
+.header{
+    height:400px;
+    width:100%;
+    background-color:rosybrown;
+    background-image:url(/crowdfunding/images/image-hero-desktop.jpg)
+}
+.menu{
+
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:30px 100px;
+    
+}
+#logo{
+    font-size:25px;
+    color:white;
+    font-weight:bold;
+}
+#menu-nav{
+    display: block;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;  
+    list-style: none; 
+    transition:0.5s;
+}
+
+li a,a {
+    text-decoration:none;
+    list-style: none;
+    font-size:16px;
+    color:white;
+   
+    transition:0.2s;
+
+}
+li a:hover {
+    border-bottom:1px solid white;
+    background-color: rgba(222,222,222,0.3);
+}
+#menu-mobile{
+    font-size:50px;
+    color:white;
+    position: absolute;
+    right:0;
+    top:0;
+    display:none;
+}
+#menu-mb{
+    position: absolute;
+    right: 0;
+    display: none;
+    
+}
+#menu-mb ul{
+    background-color:rgba(121, 108, 108,0.5);
+    height:400px;
+    width:300px;
+    flex-direction: column;
+    gap:1rem;
+    display:flex;
+    flex-direction: flex-end;
+    align-items:center;
+
+}
+
+.container{
+    margin:0 auto;
+    width:55vw;
+    position: relative;
+    margin-bottom: 30px;
+    
+    
+    
+}
+.section{
+    height:250px;
+    background-color:white;
+    border-radius: 15px;
+    margin-top: -100px;
+    padding:0 50px;
+}
+.homepage{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     flex-direction: column;
+     text-align:center;
+     
+}
+#logoPage{
+    margin-top: -15px;
+    margin-bottom:30px
+}
+#section-info{
+    margin-bottom:30px
+}
+#projects-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#backprjt,#rwdBtn{
+    width:170px;
+    height:50px;
+    background:#3db5ab;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:30px;
+}
+#bookM{
+    display:flex;
+    align-items:center;
+    background-color:rgba(222, 220, 220,0.9);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius:30%;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+}
+#bookM img{
+   height:50px
+}
+#bookM p{
+    height:50px;
+    width:100px;
+    background-color:rgba(222, 220, 220,0.4);
+    display:flex;
+    align-items: center;
+  padding:0 10px;
+    border-top-right-radius:30%;
+    border-bottom-right-radius: 30px;
+}
+
+.section2{
+    height:150px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    padding:20px 50px;
+    
+}
+.numbersPage{
+   
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+   gap:2rem;
+   
+
+  
+}
+#numbers-info{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+#numbers-info p { 
+ color:#777
+}
+#progressBar{
+    width:90%;
+    height:7px;
+    background-color: #e3f6f5;
+    border-radius:5px;
+   
+
+}
+#progress{
+    height: 100%;;
+    width:90%;
+    background-color: #3db5ab;
+    border-radius: inherit;
+}
+.section3{
+    
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    padding:0 50px;
+}
+.projectPage{
+  
+    padding: 20px 0;
+}
+span p{
+    margin: 40px 0;
+}
+#pageContent{
+    line-height: 30px;
+}
+#main-infos,#sub-infos{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;;
+}
+#reward,#modalCard{
+    border:1px solid rgb(187, 187, 187);
+    border-radius:15px;
+    padding: 20px 20px;
+    margin:30px 0 ;
+}
+#infosRwd{
+    display: flex;
+    align-items: center;
+}
+#infosRwd h3{
+   font-size:25px;
+   margin-right:5px;
+}
+#reward p{
+    margin-bottom: 30px;
+}
+#rwdBtn{
+    color:white;
+}
+
+#pladge{
+    color:#3db5ab;
+}
+#out{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: rgba(158, 154, 154,0.5);
+}
+#thirdRwd {
+    position: relative;
+}
+#thirdRwd #pladge{
+ 
+}
+
+
+/*modal*/
+.modal{
+  display:none;
+}
+.modal-content{
+    background-color: white;
+    
+    background-color:white;
+    border-radius: 15px;
+    margin-top: -100px;
+    padding:20px 50px;
+}
+#main-modal-infos{
+    display:flex;
+   gap:1rem;
+   position:relative
+    
+}
+#unitis{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    
+}
+#sub-infos-moldal{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+}
+#form-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+button{
+    
+}
+#inputArea {
+    position:relative;
+}
+#inputArea span{
+    position: absolute;
+    font-size: 25px;
+    transform: translate(50%,35%);
+}
+#input{
+    height: 50px;
+    width:90px;
+    font-size: 30px;
+    text-align: end;
+    border-radius:30px;
+    border:1px solid gray;
+    padding:2px 5px;
+
+}
+@media (max-width:800px) {
+    .container{
+        width: 95vw;
+    }
+    .menu{
+        padding: 16px 9px;
+    }
+    #menu-nav{
+        display: none;
+    }
+    #menu-mobile{
+        display:block;
+    }
+    #bookM{
+        border-radius:50%;
+    }
+    #bookM p{
+        display:none
+    }
+    .section{
+        height:300px;
+    }.section,.section2,.section3{
+
+        padding: 20px 15px;
+    }
+    /*modal*/
+
+}
+@media (max-width:550px) {
+    
+    /*modal*/
+    .modal-content h3{
+        font-size:1rem
+    }
+    #main-modal-infos {
+        gap:0.5rem
+    }
+    #unitis{
+        flex-direction:column
+    }
+    #pladge{
+        margin-right: 30px;
+    }
+    #form-align {
+        flex-direction: column;
+    }
+    #form-align, #rwdBtn {
+        flex-direction: column;
+        width:90px
+    }
+    #form-align, #reward p{
+        margin: 20px 0;
+    }
+}
